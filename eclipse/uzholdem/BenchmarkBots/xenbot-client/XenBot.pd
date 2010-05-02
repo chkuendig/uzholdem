@@ -1,0 +1,13 @@
+PLAYER_CLASS=com.biotools.poker.opponent.DPSOpponent
+PLAYER_NAME=Xenbot
+RANDOM_SEED=3131
+PREFLOP_TIGHTNESS=0
+DEBUG=false
+
+PREFLOP=-1,42s,62s,72s,82s,92s,T2s,J2s,Q2s,K2s,43s,53s,63s,73s,83s,93s,T3s,J3s,Q3s,K3s,42o,43o,64s,74s,84s,94s,T4s,J4s,Q4s,K4s,52o,53o,54o,75s,85s,95s,T5s,J5s,Q5s,K5s,62o,63o,64o,65o,86s,96s,T6s,J6s,Q6s,K6s,72o,73o,74o,75o,76o,97s,T7s,J7s,Q7s,K7s,82o,83o,84o,85o,86o,87o,T8s,J8s,Q8s,92o,93o,94o,95o,96o,97o,98o,J9s,Q9s,T2o,T3o,T5o,T6o,T7o,T8o,J2o,J3o,J4o,J5o,J6o,J7o,J8o,J9o,Q2o,Q3o,Q4o,Q5o,Q6o,Q7o,Q8o,Q9o,K2o,K3o,K4o,K5o,K6o,K7o,K8o,A3o,A4o,A5o,A6o,A7o,No Group|-3394816,JJ,QQ,KK,AKs,AA,Group One|-3407770,TT,AJs,KQs,AQs,AKo,Group Two|-3407719,99,JTs,ATs,QJs,KJs,AJo,AQo,Group Three|-3407668,77,88,KJo,KQo,ATo,Group Four|-6750004,22,33,44,55,66,Group Five|-10092391,A2s,A5s,76s,87s,98s,T9s,Group Six|-3750004,QJo,A9s,54s,T9o,Group Six-A|-10092289,A7s,K8s,A8s,K9s,KTs,JTo,K9o,KTo,Group Seven|-10066177,A3s,A4s,65s,A6s,QTs,QTo,A8o,A9o,Group Eight|-3355648,32s,52s,32o,T4o,A2o,Bluffs|
+
+
+AI_NAME=Xenbot
+NO_LIMIT=true
+
+COMMENTS=Xenbot{32}plays{32}a{32}solid{32}No-Limit{32}tournament{32}strategy.

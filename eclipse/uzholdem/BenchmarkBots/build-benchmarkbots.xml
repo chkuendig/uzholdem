@@ -1,0 +1,91 @@
+<project name="PokerAcademyClients" basedir="." default="build-all">
+
+	<description>
+		Builds the benchmark bots
+	</description>
+
+	<!-- set global properties for this build -->
+	<property name="source" location="src"/>
+	<property name="build" location="bin"/>
+
+	<target name="build-all" depends="build-averybot,build-call,build-jambot,build-oddbot,build-fold,build-xenbot"/>
+
+		<target name="build-averybot">
+				<jar jarfile="../pokerserver/bots/averybot-client.jar" >
+					<zipfileset dir="averybot-client" includes="AveryBot.pd" prefix="averybot-client" />
+					<zipfileset dir="." includes="meerkat.xzf" prefix="averybot-client" />
+					<zipfileset dir="averybot-client" includes="startme.bat" prefix="averybot-client" />
+					<zipfileset dir="averybot-client" includes="startme.sh" prefix="averybot-client" />
+					<zipfileset file="../dist/uzholdem.jar" prefix="averybot-client" />
+					<zipfileset file="../pokerserver/pokerserver.jar" prefix="averybot-client" />
+					<zipfileset file="../thirdparty/meerkat-api.jar" prefix="averybot-client" />
+				</jar>
+
+			</target>
+
+	
+	<target name="build-call">
+	<jar jarfile="../pokerserver/bots/call-client.jar" >
+		<zipfileset dir="call-client" includes="startme.bat" prefix="call-client" />
+		<zipfileset dir="call-client" includes="startme.sh" prefix="call-client" />
+		<zipfileset file="../dist/uzholdem.jar" prefix="call-client" />
+		<zipfileset file="../pokerserver/pokerserver.jar" prefix="call-client" />
+		<zipfileset file="../thirdparty/meerkat-api.jar" prefix="call-client" />
+	</jar>
+
+		</target>	
+		<target name="build-jambot">
+				<jar jarfile="../pokerserver/bots/jambot-client.jar" >
+					<zipfileset dir="jambot-client" includes="jamBot.pd" prefix="jambot-client" />
+					<zipfileset dir="." includes="meerkat.xzf" prefix="jambot-client" />
+					<zipfileset dir="jambot-client" includes="startme.bat" prefix="jambot-client" />
+					<zipfileset dir="jambot-client" includes="startme.sh" prefix="jambot-client" />
+					<zipfileset file="../dist/uzholdem.jar" prefix="jambot-client" />
+					<zipfileset file="../pokerserver/pokerserver.jar" prefix="jambot-client" />
+					<zipfileset file="../thirdparty/meerkat-api.jar" prefix="jambot-client" />
+				</jar>
+
+		</target>
+				
+		
+			
+	<target name="build-oddbot">
+			<jar jarfile="../pokerserver/bots/oddbot-client.jar" >
+				<zipfileset dir="oddbot-client" includes="OddBot.pd" prefix="oddbot-client" />
+				<zipfileset dir="." includes="meerkat.xzf" prefix="oddbot-client" />
+				<zipfileset dir="oddbot-client" includes="startme.bat" prefix="oddbot-client" />
+				<zipfileset dir="oddbot-client" includes="startme.sh" prefix="oddbot-client" />
+				<zipfileset file="../dist/uzholdem.jar" prefix="oddbot-client" />
+				<zipfileset file="../pokerserver/pokerserver.jar" prefix="oddbot-client" />
+				<zipfileset file="../thirdparty/meerkat-api.jar" prefix="oddbot-client" />
+			</jar>
+
+		</target>
+				
+		<target name="build-fold">
+				<jar jarfile="../pokerserver/bots/fold-client.jar" >
+					<zipfileset dir="fold-client" includes="startme.bat" prefix="fold-client" />
+					<zipfileset dir="fold-client" includes="startme.sh" prefix="fold-client" />
+					<zipfileset file="../dist/uzholdem.jar" prefix="fold-client" />
+					<zipfileset file="../pokerserver/pokerserver.jar" prefix="fold-client" />
+					<zipfileset file="../thirdparty/meerkat-api.jar" prefix="fold-client" />
+				</jar>
+
+			</target>	
+	
+	<target name="build-xenbot">
+		<jar jarfile="../pokerserver/bots/xenbot-client.jar" >
+			<zipfileset dir="xenbot-client" includes="XenBot.pd" prefix="xenbot-client" />
+			<zipfileset dir="." includes="meerkat.xzf" prefix="xenbot-client" />
+			<zipfileset dir="xenbot-client" includes="startme.bat" prefix="xenbot-client" />
+			<zipfileset dir="xenbot-client" includes="startme.sh" prefix="xenbot-client" />
+			<zipfileset file="../dist/uzholdem.jar" prefix="xenbot-client" />
+			<zipfileset file="../pokerserver/pokerserver.jar" prefix="xenbot-client" />
+			<zipfileset file="../thirdparty/meerkat-api.jar" prefix="xenbot-client" />
+		</jar>
+
+	</target>
+	
+
+
+</project>

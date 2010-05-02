@@ -1,0 +1,95 @@
+<project name="DonkeyClients" basedir=".">
+
+	<description>
+		Builds an Example Bot
+	</description>
+
+	<!-- set global properties for this build -->
+	<property name="source" location="src"/>
+	<property name="build" location="bin"/>
+
+	<target name="init">
+		<!-- Create the build directory structure used by compile -->
+		<mkdir dir="${build}"/>
+	</target>
+
+	<!-- ********************************************************** -->
+	<target name="compile" depends="init" description="compile the bot with the library">
+		<!-- Compile the java code from ${src} into ${build} -->
+		<javac 
+			debug="true"
+			source="1.5" 
+			srcdir="${source}/" 
+			destdir="${build}" 
+			classpath="thirdparty/poker-eval.jar;thirdparty/moa.jar;thirdparty/meerkat-api.jar;pokerserver/pokerserver.jar">
+
+			<src path="${source}"/>
+			<src path="src-thirdparty/"/>
+			
+			<exclude name="uzholdem/classifier/analyzer/neural/**"/>
+
+		</javac>
+	</target>
+
+
+	<target name="pokeracademy" depends="jar">
+	<zip zipfile="dist/uzholdem-dist.zip" >
+			<zipfileset file="data/uzholdem/UZHoldem.pd" prefix="data/bots/" />
+			<zipfileset file="data/model/PriorHoeffdingTree1Action.model" prefix="data/bots/" />
+			<zipfileset file="data/model/PriorHoeffdingTree1Hand.model" prefix="data/bots/" />
+			
+			<zipfileset file="data/bots/chubukov.pref" prefix="data/bots/" />
+			<zipfileset file="data/bots/ranks.dat" prefix="data/bots/" />
+			<zipfileset file="dist/uzholdem.jar" prefix="data/bots/" />
+		<!--	<zipfileset dir="." includes="cygpokerjni-1.dll" prefix="uzholdem-client" /> -->
+		<!--	<zipfileset dir="." includes="cygpoker-eval-1.dll" prefix="uzholdem-client" /> -->
+		</zip>
+	
+	</target>
+
+	<target name="pokerserver" depends="jar" >
+		<jar jarfile="dist/uzholdem-client.jar" >
+			<zipfileset file="data/uzholdem/UZHoldem.pd" prefix="uzholdem-client" />
+			<zipfileset file="data/uzholdem/startme.bat" prefix="uzholdem-client" />
+			<zipfileset file="data/uzholdem/startme.sh" prefix="uzholdem-client" />
+			<zipfileset file="data/model/PriorHoeffdingTree1Action.model" prefix="uzholdem-client/data/bots/" />
+			<zipfileset file="data/model/PriorHoeffdingTree1Hand.model" prefix="uzholdem-client/data/bots/" />
+			<zipfileset file="data/bots/ranks.dat" prefix="uzholdem-client/data/bots/" />
+			<zipfileset file="data/bots/chubukov.pref" prefix="uzholdem-client/data/bots/" />
+			
+			<zipfileset file="dist/uzholdem.jar" prefix="uzholdem-client" />
+			<zipfileset file="pokerserver/pokerserver.jar" prefix="uzholdem-client" />
+			<zipfileset file="thirdparty/meerkat-api.jar" prefix="uzholdem-client" />
+		<!--	<zipfileset dir="." includes="cygpokerjni-1.dll" prefix="uzholdem-client" /> -->
+		<!--	<zipfileset dir="." includes="cygpoker-eval-1.dll" prefix="uzholdem-client" /> -->
+		</jar>
+		<copy file="dist/uzholdem-client.jar" todir="pokerserver/bots" />
+	</target>
+		
+	<!-- ********************************************************** -->
+	
+	<target name="jar" depends="compile" description="generate the distribution" >
+		<jar jarfile="dist/uzholdem.jar" basedir="${build}" >
+			<manifest>
+				<attribute name="Built-By" value="${user.name}"/>
+				<attribute name="Specification-Title" value="Example"/>
+				<attribute name="Specification-Version" value="${version}"/>
+				<attribute name="Specification-Vendor" value="Example Organization"/>
+				<attribute name="Implementation-Title" value="common"/>
+				<attribute name="Implementation-Version" value="asdfasdf ${version} ${BUILDTIME}"/>
+				<attribute name="Implementation-Vendor" value="Example Corp."/>
+				<attribute name="Main-Class" value="howto.Hello"/>
+			</manifest>
+			<zipfileset file="data/chubukov.pref" prefix="data"/>
+			<zipfileset file="data/logo.png" prefix="data" />
+			<zipfileset src="thirdparty/moa.jar" />
+			<zipfileset src="thirdparty/jcommon-1.0.16.jar" />
+			<zipfileset src="thirdparty/jfreechart-1.0.13.jar" />
+		<!--	<zipfileset src="thirdparty/poker-eval.jar" />-->
+
+		</jar>
+
+	</target>
+
+
+</project>

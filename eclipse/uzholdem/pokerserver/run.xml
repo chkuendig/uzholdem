@@ -1,0 +1,47 @@
+<project name="DonkeyClients" default="run-server" basedir=".">
+	
+	<description>
+		Builds an Example Bot
+	</description>
+	
+	<!-- set global properties for this build -->
+	<property name="source" location="src"/>
+	<property name="build" location="bin"/>
+	<property name="pokerserver.dir" location="../pokerserver2.3.2"/>
+
+			<target name="generate-cards"  description="generate the distribution" >
+
+				<java classname="ca.ualberta.cs.poker.free.tournament.Forge" dir="pokerserver/" fork="true">
+			         <arg value="winlocal.prf"/>
+			         <arg value="generateCards"/>
+				         <classpath>
+				         	<pathelement location="${pokerserver.dir}/dist/pokerserver.jar"/>
+				           <pathelement location="dist/test.jar"/>
+				           <pathelement path="${java.class.path}"/>
+				         </classpath>
+				       </java>
+
+			</target>
+	<target name="clean-server">
+		 <delete includeemptydirs="true">
+				    <fileset dir="pokerserver/data/results" includes="**/*"/>
+				    <fileset dir="pokerserver/expansion/expansion1" includes="**/*"/>
+				    <fileset dir="pokerserver/expansion/expansion2" includes="**/*"/>
+				  </delete>
+	</target>
+	
+	<target name="run-server" description="generate the distribution" >
+		
+
+				<java classname="ca.ualberta.cs.poker.free.tournament.Forge" fork="true">
+			         <arg value="winlocal.prf"/>
+			         <arg value="runTournament"/>
+				         <classpath>
+				         	<pathelement location="pokerserver.jar"/>
+				           <pathelement path="${java.class.path}"/>
+				         </classpath>
+				       </java>
+
+			</target>
+		     
+</project>

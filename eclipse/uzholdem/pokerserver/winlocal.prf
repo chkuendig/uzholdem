@@ -1,0 +1,35 @@
+# Comments are indicated with a pound sign(#)
+# Machines are specified first, one per line.
+# RemoteMachine <IP> <username> <expansionLocation> [WINDOWS|LINUX]
+# LocalMachine <IP> <expansionLocation> [WINDOWS|LINUX]
+# NOTE: In general, there are issues with using local machines,
+# namely that the server cannot tell which player is which
+# when they connect.
+LocalMachine 127.0.0.1 expansion\expansion1\ WINDOWS
+LocalMachine 127.0.0.1 expansion\expansion2\ WINDOWS
+
+# Then, tournaments are specified
+# Currently, only one tournament is supported.
+BEGIN_TOURNAMENT
+# The following is a HeadsUpLimitRoundRobin tournament header line.
+# It must be specified on one line.
+# The format is:
+# HeadsUpLimitRoundRobin <winnerdetermination> <name> <cardFileRoot> <numDuplicateHands> <IP>
+HeadsUpNoLimitRoundRobin INSTANTRUNOFFSERIES nolimittest2 nolimittest 6 127.0.0.1
+
+# Finally, bots for the tournament are listed
+# BotTarFile <name> <tarfilelocation> <locationintarfile> (WINDOWS|LINUX)+
+
+BotTarFile UZHoldem bots\uzholdem-client.jar uzholdem-client\ WINDOWS LOCALWINDOWS
+BotTarFile JamBot bots\jambot-client.jar jambot-client\ WINDOWS LOCALWINDOWS
+BotTarFile AlwaysCall bots\call-client.jar call-client\ WINDOWS LOCALWINDOWS
+BotTarFile AlwaysFold bots\fold-client.jar fold-client\ WINDOWS LOCALWINDOWS
+BotTarFile XenBot bots\xenbot-client.jar xenbot-client\ WINDOWS LOCALWINDOWS
+BotTarFile AveryBot bots\averybot-client.jar averybot-client\ WINDOWS LOCALWINDOWS
+#BotTarFile Random1 bots\random-client.jar random-client\ WINDOWS LOCALWINDOWS
+#BotTarFile OddBot bots\oddbot-client.jar oddbot-client\ WINDOWS LOCALWINDOWS
+
+END_TOURNAMENT
+
+
+

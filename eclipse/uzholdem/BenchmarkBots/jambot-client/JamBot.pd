@@ -1,0 +1,8 @@
+PLAYER_CLASS=com.biotools.poker.opponent.SklanskyOpponent
+PLAYER_NAME=Jambot
+RANDOM_SEED=3131
+PREFLOP_TIGHTNESS=0
+DEBUG=false
+NO_LIMIT=true
+AI_NAME=Jambot
+COMMENTS=Jambot{32}uses{32}David{32}Sklansky's{32}No-Limit{32}Tournament{32}'System'{32}Strategy.{32}It{32}will{32}either{32}fold{32}or{32}go{32}all-in{32}pre-flop,{32}based{32}on{32}a{32}formula.{32}Sklansky-1{32}plays{32}the{32}strategy{32}defined{32}in{32}"Tournament{32}Poker{32}For{32}Advanced{32}Players"{32}by{32}David{32}Sklansky.{32}System-2{32}uses{32}the{32}more{32}complex{32}system{32}published{32}in{32}Card{32}Player{32}Magazine.

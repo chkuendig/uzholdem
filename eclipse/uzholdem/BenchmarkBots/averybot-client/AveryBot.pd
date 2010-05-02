@@ -1,0 +1,18 @@
+# All plug-ins must run through the following class:
+PLAYER_CLASS=com.biotools.poker.opponent.AveryBot
+
+# Your Bot's name:
+PLAYER_NAME=AveryBot
+
+# Your bot engine name:
+AI_NAME=AveryBot
+
+# Options for your Bot:
+DEBUG=false
+RANDOM_SEED=31313
+ALWAYS_CALL_MODE=false
+NO_LIMIT=true
+PREFLOP_TIGHTNESS=0.5
+POSTFLOP_TIGHTNESS=0.5
+
+COMMENTS=Averybot plays an aggressive strategy for No-Limit tournaments. It attempts to build its stack gradually as the blind levels progress, whiling avoiding marginal situations that put a major portion of its stack at risk. Written by Brian Edwards.

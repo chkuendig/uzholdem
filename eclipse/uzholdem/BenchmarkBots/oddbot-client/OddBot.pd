@@ -1,0 +1,8 @@
+PLAYER_CLASS=com.biotools.poker.opponent.NLOpponent
+PLAYER_NAME=Oddbot
+RANDOM_SEED=3131
+PREFLOP_TIGHTNESS=0
+DEBUG=false
+AI_NAME=Oddbot
+NO_LIMIT=true
+COMMENTS=Oddbot is an erratic No-Limit player.

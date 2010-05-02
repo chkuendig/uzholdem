@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.1
+Created-By: 14.2-b01 (Sun Microsystems Inc.)
+Built-By: Christian
+
+Name: common
+Specification-Title: Example
+Specification-Version: ${version}
+Specification-Vendor: Example Organization
+Implementation-Title: common
+Implementation-Version: ${version} 10:40 21-November-2009
+Implementation-Vendor: Example Corp.
+

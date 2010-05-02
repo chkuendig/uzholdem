@@ -1,0 +1,1 @@
+for /f %%a IN ('dir /b *.r') do call "c:\Program Files (x86)\R\R-2.10.1\bin\Rterm.exe" -q --no-save < %%a

@@ -1,0 +1,62 @@
+Mar 26, 2010 6:11:06 AM
+Queued Matches
+server:/127.0.0.1 port:0 card file: data/cards/nolimittest4.crd name:nolimittest2.Random1.AveryBot.match4fwd resultFile:data/results/nolimittest2.Random1.AveryBot.match4fwd.res logFile:data/results/nolimittest2.Random1.AveryBot.match4fwd.log serverLogFile:data/serverlog/nolimittest2.Random1.AveryBot.match4fwd.srv timePerHand:7000 numHands:3000 numCards:9 limit:DOYLE
+BotTarFile Random1 bots\random-client.jar random-client\  LINUX LOCALLINUX
+BotTarFile AveryBot bots\averybot-client.jar averybot-client\  LINUX LOCALLINUX
+no machines yet
+
+server:/127.0.0.1 port:0 card file: data/cards/nolimittest4.crd name:nolimittest2.Random1.AveryBot.match4rev resultFile:data/results/nolimittest2.Random1.AveryBot.match4rev.res logFile:data/results/nolimittest2.Random1.AveryBot.match4rev.log serverLogFile:data/serverlog/nolimittest2.Random1.AveryBot.match4rev.srv timePerHand:7000 numHands:3000 numCards:9 limit:DOYLE
+BotTarFile AveryBot bots\averybot-client.jar averybot-client\  LINUX LOCALLINUX
+BotTarFile Random1 bots\random-client.jar random-client\  LINUX LOCALLINUX
+no machines yet
+
+server:/127.0.0.1 port:0 card file: data/cards/nolimittest5.crd name:nolimittest2.Random1.AveryBot.match5fwd resultFile:data/results/nolimittest2.Random1.AveryBot.match5fwd.res logFile:data/results/nolimittest2.Random1.AveryBot.match5fwd.log serverLogFile:data/serverlog/nolimittest2.Random1.AveryBot.match5fwd.srv timePerHand:7000 numHands:3000 numCards:9 limit:DOYLE
+BotTarFile Random1 bots\random-client.jar random-client\  LINUX LOCALLINUX
+BotTarFile AveryBot bots\averybot-client.jar averybot-client\  LINUX LOCALLINUX
+no machines yet
+
+server:/127.0.0.1 port:0 card file: data/cards/nolimittest5.crd name:nolimittest2.Random1.AveryBot.match5rev resultFile:data/results/nolimittest2.Random1.AveryBot.match5rev.res logFile:data/results/nolimittest2.Random1.AveryBot.match5rev.log serverLogFile:data/serverlog/nolimittest2.Random1.AveryBot.match5rev.srv timePerHand:7000 numHands:3000 numCards:9 limit:DOYLE
+BotTarFile AveryBot bots\averybot-client.jar averybot-client\  LINUX LOCALLINUX
+BotTarFile Random1 bots\random-client.jar random-client\  LINUX LOCALLINUX
+no machines yet
+
+server:/127.0.0.1 port:0 card file: data/cards/nolimittest0.crd name:nolimittest2.Random1.AveryBot.match0fwd resultFile:data/results/nolimittest2.Random1.AveryBot.match0fwd.res logFile:data/results/nolimittest2.Random1.AveryBot.match0fwd.log serverLogFile:data/serverlog/nolimittest2.Random1.AveryBot.match0fwd.srv timePerHand:7000 numHands:3000 numCards:9 limit:DOYLE
+BotTarFile Random1 bots\random-client.jar random-client\  LINUX LOCALLINUX
+BotTarFile AveryBot bots\averybot-client.jar averybot-client\  LINUX LOCALLINUX
+no machines yet
+
+server:/127.0.0.1 port:0 card file: data/cards/nolimittest0.crd name:nolimittest2.Random1.AveryBot.match0rev resultFile:data/results/nolimittest2.Random1.AveryBot.match0rev.res logFile:data/results/nolimittest2.Random1.AveryBot.match0rev.log serverLogFile:data/serverlog/nolimittest2.Random1.AveryBot.match0rev.srv timePerHand:7000 numHands:3000 numCards:9 limit:DOYLE
+BotTarFile AveryBot bots\averybot-client.jar averybot-client\  LINUX LOCALLINUX
+BotTarFile Random1 bots\random-client.jar random-client\  LINUX LOCALLINUX
+no machines yet
+
+server:/127.0.0.1 port:0 card file: data/cards/nolimittest1.crd name:nolimittest2.Random1.AveryBot.match1fwd resultFile:data/results/nolimittest2.Random1.AveryBot.match1fwd.res logFile:data/results/nolimittest2.Random1.AveryBot.match1fwd.log serverLogFile:data/serverlog/nolimittest2.Random1.AveryBot.match1fwd.srv timePerHand:7000 numHands:3000 numCards:9 limit:DOYLE
+BotTarFile Random1 bots\random-client.jar random-client\  LINUX LOCALLINUX
+BotTarFile AveryBot bots\averybot-client.jar averybot-client\  LINUX LOCALLINUX
+no machines yet
+
+server:/127.0.0.1 port:0 card file: data/cards/nolimittest1.crd name:nolimittest2.Random1.AveryBot.match1rev resultFile:data/results/nolimittest2.Random1.AveryBot.match1rev.res logFile:data/results/nolimittest2.Random1.AveryBot.match1rev.log serverLogFile:data/serverlog/nolimittest2.Random1.AveryBot.match1rev.srv timePerHand:7000 numHands:3000 numCards:9 limit:DOYLE
+BotTarFile AveryBot bots\averybot-client.jar averybot-client\  LINUX LOCALLINUX
+BotTarFile Random1 bots\random-client.jar random-client\  LINUX LOCALLINUX
+no machines yet
+
+server:/127.0.0.1 port:0 card file: data/cards/nolimittest2.crd name:nolimittest2.Random1.AveryBot.match2fwd resultFile:data/results/nolimittest2.Random1.AveryBot.match2fwd.res logFile:data/results/nolimittest2.Random1.AveryBot.match2fwd.log serverLogFile:data/serverlog/nolimittest2.Random1.AveryBot.match2fwd.srv timePerHand:7000 numHands:3000 numCards:9 limit:DOYLE
+BotTarFile Random1 bots\random-client.jar random-client\  LINUX LOCALLINUX
+BotTarFile AveryBot bots\averybot-client.jar averybot-client\  LINUX LOCALLINUX
+no machines yet
+
+server:/127.0.0.1 port:0 card file: data/cards/nolimittest2.crd name:nolimittest2.Random1.AveryBot.match2rev resultFile:data/results/nolimittest2.Random1.AveryBot.match2rev.res logFile:data/results/nolimittest2.Random1.AveryBot.match2rev.log serverLogFile:data/serverlog/nolimittest2.Random1.AveryBot.match2rev.srv timePerHand:7000 numHands:3000 numCards:9 limit:DOYLE
+BotTarFile AveryBot bots\averybot-client.jar averybot-client\  LINUX LOCALLINUX
+BotTarFile Random1 bots\random-client.jar random-client\  LINUX LOCALLINUX
+no machines yet
+
+Running Matches
+server:/127.0.0.1 port:64372 card file: data/cards/nolimittest3.crd name:nolimittest2.Random1.AveryBot.match3rev resultFile:data/results/nolimittest2.Random1.AveryBot.match3rev.res logFile:data/results/nolimittest2.Random1.AveryBot.match3rev.log serverLogFile:data/serverlog/nolimittest2.Random1.AveryBot.match3rev.srv timePerHand:7000 numHands:3000 numCards:9 limit:DOYLE
+BotTarFile AveryBot bots\averybot-client.jar averybot-client\  LINUX LOCALLINUX
+BotTarFile Random1 bots\random-client.jar random-client\  LINUX LOCALLINUX
+127.0.0.1 expansion/expansion1/ LINUX
+127.0.0.1 expansion/expansion2/ LINUX
+
+Hand Number:708
+Available Machines:0
+Available Machines:0

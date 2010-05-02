@@ -1,0 +1,38 @@
+ADX                     Welles Wilder's Directional Movement Index
+ATR                     True Range / Average True Range
+CCI                     Commodity Channel Index
+CLV                     Close Location Value
+CMF                     Chaikin Money Flow
+CMO                     Chande Momentum Oscillator
+DPO                     De-Trended Price Oscillator
+DonchianChannel         Donchian Channel
+EMV                     Arms' Ease of Movement Value
+GMMA                    Guppy Multiple Moving Averages
+KST                     Know Sure Thing
+MACD                    MACD Oscillator
+MFI                     Money Flow Index
+MovingAverages          Moving Averages
+OBV                     On Balance Volume (OBV)
+RSI                     Relative Strength Index
+SAR                     Parabolic Stop-and-Reverse
+TDI                     Trend Detection Index
+TRIX                    Triple Smoothed Exponential Oscillator
+TTR                     Functions to create Technical Trading Rules
+                        (TTR)
+VHF                     Vertical Horizontal Filter
+WPR                     William's %R
+WebData                 Fetch Internet Data
+ZigZag                  Zig Zag
+adjRatios               Split and dividend adjustment ratios
+aroon                   Aroon
+bollingerBands          Bollinger Bands
+chaikinAD               Chaikin Accumulation / Distribution
+chaikinVolatility       Chaikin Volatility
+changes                 Rate of Change / Momentum
+growth                  Miscellaneous Tools
+runFun                  Analysis of Running/Rolling/Moving Windows
+stochastics             Stochastic Oscillator / Stochastic Momentum
+                        Index
+ttrc                    Technical Trading Rule Composite data
+volatility              Volatility
+williamsAD              Williams Accumulation / Distribution
