@@ -71,3 +71,19 @@ local.properties
  
 # PDT-specific
 .buildpath
+
+## UZHoldem Data Files
+
+uzholdem/data/arff/nolimitHU.action-noBluffbot4.arff
+uzholdem/data/arff/nolimitHU.action-noHyperboreanNL-BR.arff
+uzholdem/data/arff/nolimitHU.action-noHyperboreanNL-Eqm.arff
+uzholdem/data/arff/nolimitHU.action-noHyperboreanNL.arff
+uzholdem/data/arff/nolimitHU.action-noTartanian3.arff
+uzholdem/data/arff/nolimitHU.action-noTartanian3RM.arff
+uzholdem/data/arff/nolimitHU.action.arff
+uzholdem/data/model/offlineTrained-noDataBluffBot4.model
+uzholdem/data/model/offlineTrained.model
+uzholdem/data/model/pretrainedOnlineMultilayerPerceptron-noDataBluffBot4.model
+uzholdem/data/model/pretrainedOnlineMultilayerPerceptron.model
+uzholdem/data/model/PriorUpdateableMultilayerPerceptron-noDataBluffBot4.model
+uzholdem/data/model/PriorUpdateableMultilayerPerceptron.model
